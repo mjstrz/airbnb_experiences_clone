@@ -12,7 +12,7 @@ const cards = data.map(item => {
 return (
   <Card 
       key={item.id}
-      item={item}
+      {...item}
   />
 )
 })        
@@ -20,6 +20,7 @@ return (
 return (
 <div>
   <Navbar />
+  <Hero /> 
   <section className='cards-list'>
     {cards}
   </section>
